@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="81" viewBox="0 0 300 81">
+<defs>
+<linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#00F5FF">
+<animate attributeName="stop-color" values="#00F5FF;#6C63FF;#FF4FD8;#00F5FF" dur="6s" repeatCount="indefinite"/>
+</stop>
+<stop offset="100%" stop-color="#6C63FF">
+<animate attributeName="stop-color" values="#6C63FF;#FF4FD8;#00F5FF;#6C63FF" dur="6s" repeatCount="indefinite"/>
+</stop>
+</linearGradient>
+<filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+<feGaussianBlur stdDeviation="3" result="blur"/>
+<feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+<rect width="300" height="81" rx="14" fill="#0D1117"/>
+<text x="150" y="53" text-anchor="middle" font-family="Poppins,Segoe UI,Arial,sans-serif" font-size="34" font-weight="800" letter-spacing="2" fill="url(#grad)" stroke="url(#grad)" stroke-width="0.8" filter="url(#glow)" stroke-dasharray="420" stroke-dashoffset="420">
+THY INDEX
+<animate attributeName="stroke-dashoffset" from="420" to="0" dur="2.2s" fill="freeze"/>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 -1.8;0 0;0 1.8;0 0" dur="4s" repeatCount="indefinite"/>
+</text>
+<rect x="-120" y="0" width="80" height="81" fill="white" opacity="0.12" transform="rotate(18)">
+<animate attributeName="x" from="-150" to="420" dur="3.8s" repeatCount="indefinite"/>
+</rect>
+</svg>
