@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="81" viewBox="0 0 300 81">
+<defs>
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#38bdf8"/>
+<stop offset="100%" stop-color="#ec4899"/>
+</linearGradient>
+<linearGradient id="txt" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#c8f7ff"/>
+<stop offset="50%" stop-color="#eef4ff"/>
+<stop offset="100%" stop-color="#ffd4ef"/>
+</linearGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+<feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#ffffff" flood-opacity="0.25"/>
+</filter>
+</defs>
+
+<rect width="300" height="81" fill="#0f172a"/>
+<circle cx="30" cy="62" r="28" fill="#38bdf8" opacity=".28" filter="url(#blur)"/>
+<circle cx="270" cy="18" r="30" fill="#ec4899" opacity=".28" filter="url(#blur)"/>
+
+<rect x="8" y="8" width="284" height="65" rx="18"
+fill="url(#bg)" fill-opacity=".18"
+stroke="rgba(255,255,255,.6)" stroke="#ffffff" stroke-opacity=".55"/>
+
+<path d="M14 12 H286" stroke="#fff" stroke-opacity=".35"/>
+<path d="M210 8 L292 8 L292 38" stroke="#fff" stroke-opacity=".15"/>
+
+<text x="150" y="52"
+text-anchor="middle"
+font-family="Inter,Segoe UI,Arial,sans-serif"
+font-size="34"
+font-weight="800"
+letter-spacing="2"
+fill="url(#txt)"
+filter="url(#shadow)">THY INDEX</text>
+</svg>
