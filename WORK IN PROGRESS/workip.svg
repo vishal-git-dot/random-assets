@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0%" stop-color="#58a6ff"/><stop offset="100%" stop-color="#7ee787"/></linearGradient></defs>
+<rect width="900" height="220" rx="16" fill="#0d1117"/>
+<text x="170" y="85" font-size="34" fill="white" font-family="Arial" font-weight="700">🚧 WORK IN PROGRESS 🚧
+<animate attributeName="opacity" values="1;.6;1" dur="2s" repeatCount="indefinite"/></text>
+<text x="170" y="120" font-size="18" fill="#8b949e" font-family="Arial">Building something awesome...</text>
+<circle cx="90" cy="80" r="28" fill="none" stroke="#58a6ff" stroke-width="5"/>
+<g stroke="#58a6ff" stroke-width="5" transform="translate(90,80)">
+<line x1="0" y1="-40" x2="0" y2="-28"/><line x1="0" y1="28" x2="0" y2="40"/><line x1="-40" y1="0" x2="-28" y2="0"/><line x1="28" y1="0" x2="40" y2="0"/>
+<animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/></g>
+<rect x="80" y="160" width="740" height="12" rx="6" fill="#30363d"/>
+<clipPath id="c"><rect x="80" y="160" width="740" height="12" rx="6"/></clipPath>
+<g clip-path="url(#c)"><rect x="-220" y="160" width="220" height="12" fill="url(#g)"><animate attributeName="x" from="-220" to="820" dur="2.5s" repeatCount="indefinite"/></rect></g>
+<text x="80" y="198" font-size="15" fill="#7ee787" font-family="monospace">STATUS: ACTIVE DEVELOPMENT</text>
+</svg>
