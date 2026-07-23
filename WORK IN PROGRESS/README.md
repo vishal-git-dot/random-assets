@@ -6,6 +6,8 @@
 
 ![Work in Progress](wip-banner.svg)
 
+![wip-banner.svg](https://img.shields.io/badge/wip--banner.svg-6c63ff?style=flat-square&logo=svg&logoColor=white)
+
 <br/>
 
 ---
