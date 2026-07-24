@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 800 200"
+     width="800"
+     height="200">
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="50%" stop-color="#7ee787"/>
+      <stop offset="100%" stop-color="#f2cc60"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24"
+            fill="none"
+            stroke="#30363d"
+            stroke-width="1"/>
+    </pattern>
+
+    <clipPath id="progressClip">
+      <rect x="160" y="145" width="560" height="10" rx="5"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" rx="12" fill="url(#bg)"/>
+
+  <!-- Animated Grid -->
+  <rect width="800" height="200" fill="url(#grid)" opacity="0.25">
+    <animateTransform attributeName="transform"
+                      type="translate"
+                      from="0 0"
+                      to="-24 0"
+                      dur="8s"
+                      repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Rotating Gear -->
+  <g transform="translate(85 82)">
+    <circle r="28"
+            fill="none"
+            stroke="#58a6ff"
+            stroke-width="4"/>
+
+    <g stroke="#58a6ff" stroke-width="4">
+      <line x1="0" y1="-40" x2="0" y2="-28"/>
+      <line x1="0" y1="28" x2="0" y2="40"/>
+      <line x1="-40" y1="0" x2="-28" y2="0"/>
+      <line x1="28" y1="0" x2="40" y2="0"/>
+
+      <line x1="28" y1="28" x2="36" y2="36"/>
+      <line x1="-28" y1="-28" x2="-36" y2="-36"/>
+      <line x1="-28" y1="28" x2="-36" y2="36"/>
+      <line x1="28" y1="-28" x2="36" y2="-36"/>
+
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0"
+                        to="360"
+                        dur="8s"
+                        repeatCount="indefinite"/>
+    </g>
+
+    <circle r="7" fill="#58a6ff"/>
+  </g>
+
+  <!-- Title -->
+  <text x="160"
+        y="75"
+        fill="#ffffff"
+        font-family="Segoe UI, Arial, sans-serif"
+        font-size="30"
+        font-weight="700">
+    🚧 UNDER CONSTRUCTION 🚧
+
+    <animate attributeName="opacity"
+             values="1;0.7;1"
+             dur="2s"
+             repeatCount="indefinite"/>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="160"
+        y="105"
+        fill="#8b949e"
+        font-family="Segoe UI, Arial, sans-serif"
+        font-size="15">
+    This repository is actively being built.
+  </text>
+
+  <!-- Progress -->
+  <rect x="160"
+        y="145"
+        width="560"
+        height="10"
+        rx="5"
+        fill="#30363d"/>
+
+  <g clip-path="url(#progressClip)">
+    <rect x="-180"
+          y="145"
+          width="180"
+          height="10"
+          fill="url(#accent)"
+          filter="url(#glow)">
+      <animate attributeName="x"
+               from="-180"
+               to="720"
+               dur="2.8s"
+               repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Status -->
+  <text x="160"
+        y="180"
+        fill="#7ee787"
+        font-family="Consolas, monospace"
+        font-size="14">
+    STATUS: ACTIVE DEVELOPMENT
+
+    <animate attributeName="opacity"
+             values="1;0.35;1"
+             dur="1.2s"
+             repeatCount="indefinite"/>
+  </text>
+
+</svg>
